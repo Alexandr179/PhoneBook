@@ -1,0 +1,103 @@
+
+### get all Users (ADMIN)
+GET http://localhost/api/v0.1/users
+Authentication: admin_token
+
+
+###  create new User (ADMIN)
+POST http://localhost/api/v0.1/users
+Authentication: admin_token
+Content-Type: application/json
+
+{
+  "id": null,
+  "firstName": "Vasily",
+  "password": "querty_vasya",
+  "email": "vasily@gmail.com",
+  "roles": [
+    "USER"
+  ],
+  "number": "+71234567890"
+}
+
+
+### get User by Id (ADMIN)
+GET http://localhost/api/v0.1/users/4
+Authentication: admin_token
+
+
+### get User by Id (ADMIN)
+DELETE http://localhost/api/v0.1/users/4
+Authentication: admin_token
+
+
+###  update User (ADMIN) (*number updated from all user's numberNotes)
+PUT http://localhost/api/v0.1/users
+Authentication: admin_token
+Content-Type: application/json
+
+{
+  "id": 2,
+  "firstName": "operator_update",
+  "password": "querty",
+  "email": "operator_update@gmail.com",
+  "roles": [
+    "USER"
+  ],
+  "number": "+70101010101010110010"
+}
+
+
+### get Users by name(path of name) (ADMIN)
+GET http://localhost/api/v0.1/users/search?namepath=ope
+Authentication: admin_token
+
+
+### --------------- phones operation ------------------
+
+### get all phoneNotes by userId (USER)
+GET http://localhost/api/v0.1/phones/users/2
+Authentication: user2_token
+
+
+###  create new phoneNote (USER)
+POST http://localhost/api/v0.1/phones
+Authentication: user2_token
+Content-Type: application/json
+
+{
+  "id": null,
+  "number": "+71111111111",
+  "text": "notification ..create new numberNote",
+  "state": "ALLOWED",
+  "userId": 2
+}
+
+
+### get phoneNote by id (USER)
+GET http://localhost/api/v0.1/phones/1
+Authentication: user2_token
+
+
+###  update phoneNote (USER)
+POST http://localhost/api/v0.1/phones
+Authentication: user2_token
+Content-Type: application/json
+
+{
+  "id": 1,
+  "number": "+71111111111",
+  "text": "notification ..update numberNote",
+  "state": "ALLOWED",
+  "userId": 2
+}
+
+
+### delete phoneNote by id (USER)
+DELETE http://localhost/api/v0.1/phones/1
+Authentication: user2_token
+
+
+### get phoneNotes by number (USER)
+GET http://localhost/api/v0.1/phones?number=81111111111
+Authentication: user2_token
