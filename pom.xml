@@ -9,8 +9,8 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <groupId>ru.dins-сollaboration</groupId>
-    <artifactId>claims-operator</artifactId>
+    <groupId>ru.dins</groupId>
+    <artifactId>сollaboration</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>phonebook</name>
     <description>Task_from_collaboration</description>
