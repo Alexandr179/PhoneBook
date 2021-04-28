@@ -10,7 +10,7 @@
     </parent>
 
     <groupId>ru.dins</groupId>
-    <artifactId>сollaboration</artifactId>
+    <artifactId>phonebook</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>phonebook</name>
     <description>Task_from_collaboration</description>
