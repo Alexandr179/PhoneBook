@@ -45,16 +45,4 @@ public class ApplicationConfig {
                 .setFieldAccessLevel(PRIVATE);
         return mapper;
     }
-
-
-    // https://devcenter.heroku.com/articles/deploying-spring-boot-apps-to-heroku#creating-a-spring-boot-app
-    @Value("${spring.datasource.url}")
-    private String dbUrl;
-
-    @Bean
-    public DataSource dataSource() {
-        HikariConfig config = new HikariConfig();
-        config.setJdbcUrl(dbUrl);
-        return new HikariDataSource(config);
-    }
 }
