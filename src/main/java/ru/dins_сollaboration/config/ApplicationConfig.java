@@ -23,10 +23,7 @@ import static org.modelmapper.config.Configuration.AccessLevel.PRIVATE;
 @Configuration
 @ComponentScan(basePackages = "ru.dins_сollaboration")
 @PropertySource(value = "classpath:application.properties")
-
 public class ApplicationConfig {
-
-    Logger log = LoggerFactory.getLogger(getClass());
 
     @Bean
     public Docket api() {

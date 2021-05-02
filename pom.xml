@@ -69,19 +69,18 @@
             <scope>runtime</scope>
         </dependency>
 
-<!--        https://devcenter.heroku.com/articles/deploying-spring-boot-apps-to-heroku#creating-a-spring-boot-app-->
+        <!-- PostgreSQL used in Staging and Production environment, e.g. on Heroku -->
+        <!-- https://devcenter.heroku.com/articles/deploying-spring-boot-apps-to-heroku#creating-a-spring-boot-app-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-jdbc</artifactId>
         </dependency>
-
-        <!-- PostgreSQL used in Staging and Production environment, e.g. on Heroku -->
         <!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
-            <scope>runtime</scope>
-            <version>42.2.18</version>
+<!--            <scope>runtime</scope>-->
+<!--            <version>42.2.18</version>-->
         </dependency>
 
 
