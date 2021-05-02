@@ -11,10 +11,11 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 public class RestApiApplication {
 
     public static void main(String[] args) {
-        ConfigurableApplicationContext context = SpringApplication.run(RestApiApplication.class, args);
+        SpringApplication.run(RestApiApplication.class, args);
 
         // only one (from remote Heroku-deploy)
-        TestDataUtil testPopulateDBDataUtil = context.getBean(TestDataUtil.class);
-        testPopulateDBDataUtil.initializeData();// populate with init-data by hibernate
+//        ConfigurableApplicationContext context = SpringApplication.run(RestApiApplication.class, args);
+//        TestDataUtil testPopulateDBDataUtil = context.getBean(TestDataUtil.class);
+//        testPopulateDBDataUtil.initializeData();// populate with init-data by hibernate
     }
 }

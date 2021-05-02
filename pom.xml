@@ -63,11 +63,11 @@
         </dependency>
 
         <!-- In-Memory database used for local development & testing -->
-<!--        <dependency>-->
-<!--            <groupId>com.h2database</groupId>-->
-<!--            <artifactId>h2</artifactId>-->
-<!--            <scope>runtime</scope>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <scope>runtime</scope>
+        </dependency>
 
         <!-- Switch back from Spring Boot 2.x standard HikariCP to Tomcat JDBC,
         configured later in Heroku (see https://stackoverflow.com/a/49970142/4964553) -->
