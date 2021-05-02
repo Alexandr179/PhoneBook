@@ -17,11 +17,11 @@ import javax.sql.DataSource;
 public class RestApiApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(RestApiApplication.class, args);
+//        SpringApplication.run(RestApiApplication.class, args);
 
         // only one (from remote Heroku-deploy)
-//        ConfigurableApplicationContext context = SpringApplication.run(RestApiApplication.class, args);
-//        TestDataUtil testPopulateDBDataUtil = context.getBean(TestDataUtil.class);
-//        testPopulateDBDataUtil.initializeData();// populate with init-data by hibernate
+        ConfigurableApplicationContext context = SpringApplication.run(RestApiApplication.class, args);
+        TestDataUtil testPopulateDBDataUtil = context.getBean(TestDataUtil.class);
+        testPopulateDBDataUtil.initializeData();// populate with init-data by hibernate
     }
 }
