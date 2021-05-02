@@ -14,7 +14,7 @@ public class RestApiApplication {
         ConfigurableApplicationContext context = SpringApplication.run(RestApiApplication.class, args);
 
         // only one (from remote Heroku-deploy)
-//        TestDataUtil testPopulateDBDataUtil = context.getBean(TestDataUtil.class);
-//        testPopulateDBDataUtil.initializeData();// populate with init-data by hibernate
+        TestDataUtil testPopulateDBDataUtil = context.getBean(TestDataUtil.class);
+        testPopulateDBDataUtil.initializeData();// populate with init-data by hibernate
     }
 }
