@@ -53,5 +53,6 @@ Port:           5432
 
         ..advanced:
 ssl:            true
+sslMode:        always
 sslFactory:     org.postgresql.ssl.NonValidatingFactory
 
