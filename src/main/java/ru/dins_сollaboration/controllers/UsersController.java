@@ -48,6 +48,7 @@ public class UsersController {
     }
 
 
+
     @PreAuthorize("hasAuthority('ADMIN')")// get User by Id (ADMIN)
     @GetMapping("/users/{id}")
     public ResponseEntity<UserDto> getUser(@PathVariable("id") Long userId) {
